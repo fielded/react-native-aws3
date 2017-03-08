@@ -93,6 +93,8 @@ Arguments:
   * `successActionStatus` - HTTP response status if successful, defaults to 201
   * `awsUrl` - [AWS S3 url](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region). Defaults to `s3.amazonaws.com`
   * `timeDelta` - Devices time offset from world clock in milliseconds, defaults to 0
+  * `presign` - If `true`, indicate request has been [pre-signed](http://docs.aws.amazon.com/AmazonS3/latest/dev/PresignedUrlUploadObject.html) (see `signature` option), defaults to `false`
+  * `signature` - A pre-signed signature response
 
 Returns an object that wraps an `XMLHttpRequest` instance and behaves like a promise, with the following additional methods:
 
